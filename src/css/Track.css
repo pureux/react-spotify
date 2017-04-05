@@ -1,0 +1,44 @@
+.Track {
+    display: block;
+    background-color: #333;
+    margin: 0.2rem 0;
+    padding: 0.5rem;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Track .duration {
+    display: block;
+    float: right;
+    color: #999;
+    font-weight: 300;
+    width: 40px;
+    text-align: right;
+}
+
+.Track .number {
+    display: block;
+    float: left;
+    width: 40px;
+    color: #999;
+    font-weight: 300;
+    text-align: left;
+}
+
+.Track .title {
+    display: block;
+    margin: 0 60px;
+    color: #fff;
+    font-weight: 700;
+    text-align: left;
+}
+
+.Track:hover .duration,
+.Track:hover .number {
+    color: #ddd;
+}
+
+.Track:hover .title {
+    color: #61dafb;
+}
