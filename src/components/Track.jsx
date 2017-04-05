@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FontAwesome from 'react-fontawesome';
 import '../css/Track.css';
 
 class Track extends Component {
@@ -35,8 +36,8 @@ class Track extends Component {
 
     return (
       <div className={'Track' + (selected ? ' selected' : '')} id={id}>
-        <button className="play" onClick={this.onPlayClick}>Play</button>
-        <button className="stop" onClick={this.onStopClick}>Stop</button>
+        <FontAwesome className="play" name="play" onClick={this.onPlayClick} />
+        <FontAwesome className="stop" name="stop" onClick={this.onStopClick} />
         <span className="number">{track_number}</span>
         <span className="duration">{duration}</span>
         <span className="title">{name}</span>

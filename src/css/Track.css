@@ -7,6 +7,7 @@
     width: 100%;
     box-sizing: border-box;
     position: relative;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .Track .duration {
@@ -16,6 +17,7 @@
     font-weight: 300;
     width: 40px;
     text-align: right;
+    cursor: default;
 }
 
 .Track .number {
@@ -25,14 +27,16 @@
     color: #999;
     font-weight: 300;
     text-align: left;
+    cursor: default;
 }
 
 .Track .title {
     display: block;
     margin: 0 60px 0 80px;
     color: #fff;
-    font-weight: 700;
+    font-weight: 300;
     text-align: left;
+    cursor: default;
 }
 
 .Track .play,
@@ -48,6 +52,8 @@
     background: transparent;
     border: none;
     text-align: center;
+    transition: color 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .Track .play:hover,
@@ -63,13 +69,18 @@
     display: none;
 }
 
+.Track.selected,
+.Track.selected:hover {
+    background-color: #111;
+}
+
 .Track.selected .title {
     color: #61dafb;
 }
 
 .Track.selected .duration,
 .Track.selected .number {
-    color: #ddd;
+    color: #fff;
 }
 
 .Track.selected .play {

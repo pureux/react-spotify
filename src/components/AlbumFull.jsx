@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FontAwesome from 'react-fontawesome';
 import Track from './Track';
 import '../css/AlbumFull.css';
 
@@ -48,9 +49,7 @@ class AlbumFull extends Component {
 
     return (
       <div className="AlbumFull" id={id}>
-        <button className="close" onClick={this.onClick}>
-          X
-        </button>
+        <FontAwesome className="close" name="close" onClick={this.onClick} />
         <img src={thumb.url} alt={id} />
         <h2 className="title">{name}</h2>
         <span className="released">{releaseYear}</span>
