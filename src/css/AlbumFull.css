@@ -8,6 +8,30 @@
     background: #222;
 }
 
+.AlbumFull .close {
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    opacity: 0.3;
+    transition: opacity .5s ease-in-out;
+}
+
+.AlbumFull .close:hover,
+.AlbumFull .close:focus {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
 .AlbumFull img {
     border: 1px solid #333;
 }

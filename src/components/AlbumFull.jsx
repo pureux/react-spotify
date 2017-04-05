@@ -14,13 +14,18 @@ class AlbumFull extends Component {
   }
 
   renderTracks() {
-    const { tracks } = this.props.album;
+    const { album, isTrackSelected } = this.props;
+    const { tracks } = album;
 
     if (tracks && tracks.items && tracks.items.length) {
 
       const elements = tracks.items.map(
         (track) => {
-          return <Track key={track.id} track={track} />
+          return <Track key={track.id} 
+                    track={track}
+                    selected={isTrackSelected(track.id)}
+                    playTrack={this.props.playTrack}
+                    stopTrack={this.props.stopTrack} />
         }
       );
 
@@ -42,7 +47,10 @@ class AlbumFull extends Component {
     const thumb = images.sort((a, b) => { return a.width - b.width; })[1]; // get medium sized image
 
     return (
-      <div className="AlbumFull" id={id} onClick={this.onClick}>
+      <div className="AlbumFull" id={id}>
+        <button className="close" onClick={this.onClick}>
+          X
+        </button>
         <img src={thumb.url} alt={id} />
         <h2 className="title">{name}</h2>
         <span className="released">{releaseYear}</span>

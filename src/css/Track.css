@@ -6,6 +6,7 @@
     display: block;
     width: 100%;
     box-sizing: border-box;
+    position: relative;
 }
 
 .Track .duration {
@@ -28,17 +29,57 @@
 
 .Track .title {
     display: block;
-    margin: 0 60px;
+    margin: 0 60px 0 80px;
     color: #fff;
     font-weight: 700;
     text-align: left;
 }
 
-.Track:hover .duration,
-.Track:hover .number {
+.Track .play,
+.Track .stop {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 40px;
+    height: 35px;
+    line-height: 35px;
+    z-index: 200;
+    color: #fff;
+    background: transparent;
+    border: none;
+    text-align: center;
+}
+
+.Track .play:hover,
+.Track .stop:hover {
+    color: #61dafb;
+}
+
+.Track .play {
+    display: block;
+}
+
+.Track .stop {
+    display: none;
+}
+
+.Track.selected .title {
+    color: #61dafb;
+}
+
+.Track.selected .duration,
+.Track.selected .number {
     color: #ddd;
 }
 
-.Track:hover .title {
-    color: #61dafb;
+.Track.selected .play {
+    display: none;
+}
+
+.Track.selected .stop {
+    display: block;
+}
+
+.Track:hover {
+    background-color: #444;
 }

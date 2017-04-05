@@ -27,9 +27,11 @@ h1 {
 	text-shadow: 1px 1px 2px black;
 }
 
-.container {
+.albums {
 	display: flex;
 	flex-flow: row wrap;
   justify-content: flex-end;
 	padding: 2rem;
+	box-sizing: border-box;
+	margin-left: 450px;
 }
