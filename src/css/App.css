@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/*---------------------------
+	Player Control Bar
+----------------------------*/
+
+#control-bar{
+	display: -webkit-flex;
+	display: flex;
+	color: #3D464A;
+	text-align: left;
+
+	position: relative;
+	z-index: 10;
+
+}
+
+#container.disabled #control-bar{
+	pointer-events: none;
+}
+
+.player-control{
+	-webkit-flex: 2;
+	flex:2;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.player-control div{
+	-webkit-flex: 1;
+	flex: 1;
+	background-color: #fff;
+	text-align: center;
+	line-height: 60px;
+	height: 100%;
+	cursor: pointer;
+}
+
+#container.disabled .player-control div{
+	color: #758389;
+}
+
+#shuffle-button,
+#repeat-button{
+	line-height: 60px;
+	color: #758389;
+	position: relative;
+}
+
+#shuffle-button.active,
+#repeat-button.active{
+	line-height: 60px;
+	color: #000;
+}
+
+#repeat-button i span{
+	display: none;
+	position: absolute;
+	font: bold 12px sans-serif;
+	color: rgb(71, 91, 118);
+	top: 6px;
+	left: 13px;
+}
