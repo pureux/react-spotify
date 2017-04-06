@@ -13,32 +13,32 @@ class App extends Component {
     this.state = {
       artist: {
         // hard-coded artist ID to get us started
-        
         id: '1w5Kfo2jwwIPruYS2UWh56', 
         name: 'Pearl Jam'
-        
+
+        // id: '0SdiiPkr02EUdekHZJkt58',
+        // name: 'Hanson'
+
         // id: '1dfeR4HaWDbWqFHLkxsg1d',
         // name: 'Queen'
 
         // id: '22bE4uQ6baNwSHPVcDxLCe',
         // name: 'The Rolling Stones'
 
-        // id: '711MCceyCBcFnzjGY4Q7Un',
-        // name: 'AC/DC'
+        // id: '3gMaNLQm7D9MornNILzdSl',
+        // name: 'Lionel Richie'
 
         // id: '4KWTAlx2RvbpseOGMEmROg',
         // name: 'R.E.M.'
-
-        // NO, NO NO...
-
-        // id: '0SdiiPkr02EUdekHZJkt58',
-        // name: 'Hanson'
         
         // id: '5YGY8feqx7naU7z4HrwZM6',
         // name: 'Miley Cyrus'
         
         // id: '6sFIWsNpZYqfjUpaCgueju',
         // name: 'Carly Rae Jepsen'
+
+        // id: '711MCceyCBcFnzjGY4Q7Un',
+        // name: 'AC/DC'
       },
       albums: [],
       selectedAlbum: null,
