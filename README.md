@@ -12,12 +12,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Spotify Developer Account
 
-I have intentionally excluded my [Spotify developer account's](https://developer.spotify.com/) Client ID and Client Secret from the source code.  You'll need to create your own developer account (it's free) and add your application to that account.  You will then need to add your own Client ID and Client Secret to a file under `src/constants` named `config.js`:
+I have intentionally excluded my [Spotify developer account's](https://developer.spotify.com/) Client ID and Client Secret from the source code.  You'll need to create your own developer account (it's free) and add your application to that account.
+
+You will then need to add your own Client ID and Client Secret to a file you create under `src/constants` named `config.js`:
 
 ```
 export const CLIENT_ID = 'your-client-id-here';
 export const CLIENT_SECRET = 'your-client-secret-here';
 ```
+
+# JavaScript Syntax
+
+This project uses [JSX](https://facebook.github.io/react/docs/jsx-in-depth.html) for its HTML output, and [JavaScript ES2015](https://css-tricks.com/lets-learn-es2015/), if you aren't familiar with some of the syntax.
 
 # Screen Captures
 
