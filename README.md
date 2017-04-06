@@ -25,6 +25,10 @@ export const CLIENT_SECRET = 'your-client-secret-here';
 
 This project uses [JSX](https://facebook.github.io/react/docs/jsx-in-depth.html) for its HTML output, and [JavaScript ES2015](https://css-tricks.com/lets-learn-es2015/), if you aren't familiar with some of the syntax.
 
+# Developer Tools
+
+The [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) Chrome extension can be very useful for troubleshooting and reviewing each component's props, state, and structure.
+
 # Screen Captures
 
 ![Albums](/screencaps/react-spotify-1-albums.png?raw=true "Albums")
