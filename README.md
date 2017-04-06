@@ -4,11 +4,15 @@ This project is an example [React JS](https://facebook.github.io/react/) web app
 
 # Further Infrastructure
 
-It is a simplified example.  Typically you would add a data architecture such as [Redux](http://redux.js.org/docs/basics/UsageWithReact.html) for managing state in a more complete way instead of only at the top-level component, and add URL routing with something like [React Router](https://reacttraining.com/react-router/).
+This is a simplified example.  Typically you would add a data architecture such as [Redux](http://redux.js.org/docs/basics/UsageWithReact.html) for managing state in a more complete way instead of only at the top-level component, and add URL routing with something like [React Router](https://reacttraining.com/react-router/).
 
 # React Starter Template
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).  This setup a basic React template as well as all of the Node modules and configuration for Webpack, Babel, and other build tooling, so it is a great way to hit the ground running with a new app.
+
+# Spotify Web API
+
+I used the [Spotify Web API Node.JS wrapper](http://michaelthelin.se/spotify-web-api-node/) for handling calls to the [Spotify Web API](https://developer.spotify.com/web-api/).  There are several other free [Web API wrappers](https://developer.spotify.com/web-api/code-examples/) available for various technologies, including: .NET, JavaScript (client-side), Python, PHP, Ruby, and more.
 
 # Spotify Developer Account
 
